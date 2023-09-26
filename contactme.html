@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #page_wrap {
+                width: 300px;
+                margin: auto;
+                border: solid black;
+                border-width: thick;
+ 
+            }
+    </style>
+</head>
+<body style="background-color: yellowgreen;">
+    <section id="page">
+    <h2>Contact Me....</h2>
+            <fieldset>
+                <legend>User Queries</legend>
+                    <article>
+                        <form action="">
+                            <p>
+                            <label for="firstName">First Name : </label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Enter your first name" autofocus required>
+                            </p>
+                            <p>
+                            <label for="lastName">Last Name : </label>
+                            <input type="text" name="lastName" id="lastName" placeholder="Enter your last name" required>
+                            </p>
+                            <p>
+                                <label for="passWord">Password : </label>
+                                <input type="password" name="passWord" id="passWord" required placeholder="Enter your password">
+                            </p>
+                            <p>
+                                <label for="dropDown">Choose your Country : </label>
+                                <select name="dropDown" id="dropDown">
+                                    <optgroup label="Countries">
+                                        <option value="india">India</option>
+                                        <option value="russia">Russia</option>
+                                        <option value="dubai" selected>Dubai</option>
+                                        <option value="america">America</option>
+                                        <option value="china">China</option>
+                                        <option value="canada">Canada</option>
+                                    </optgroup> 
+                                </select>
+                            </p>
+                            <p>
+                                <label for="telePhone">Telephone : </label>
+                                <input type="number" name="telePhone" id="telePhone" min="01" max="99" required placeholder="+91">
+                                <input type="tel" name="telePhone" id="telePhone" placeholder="1234567890" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                            </p>
+                           
+                            <p>
+                                <label for="impr">ResumeImpression ?</label>
+                                <input type="radio" name="awesome" id="awesome" >
+                                <label for="awesome">Awesome</label>
+                                <input type="radio" name="satisfied" id="satisfied">
+                                <label for="satisfied">Satisfied</label>
+                                <input type="radio" name="Good" id="Good">
+                                <label for="Good">Good</label>
+                                <input type="radio" name="fair" id="fair">
+                                <label for="fair">Fair</label>
+                            </p>
+                        
+                        </form>
+                    </article>
+            </fieldset>
+            <fieldset>             
+                <legend>Comments Section</legend>
+                <p>
+                    <textarea name="comments" id="comments" cols="100" rows="10" placeholder="Enter your message here"></textarea>
+                </p>
+            </fieldset>
+            <br>
+            <button type="submit">Submit</button>   
+            <button type="reset">Reset</button><hr>
+        </section>
+    <footer>
+        <section id="contact">
+            <P>&lt;&lt;&lt;&copy; ontact: LinkedIn - <strong><a href="https://www.linkedin.com/in/saichandran-s-892165235/">SaichandranSubramani</a></strong> &gt;&gt;&gt;</P> 
+    <p><address>Kattupakkam,</address></p>
+    <P><address>Chennai , Tamil Nadu</address></P><hr>
+</section>
+    </footer>
+</body>
+</html>

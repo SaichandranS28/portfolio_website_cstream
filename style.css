@@ -1,0 +1,56 @@
+.waviy {
+    position: relative;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 50px;
+    color: #985980;
+    text-align: right;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+  header {
+    background: linear-gradient(135deg, rgb(0, 0, 0) 10%, rgb(12, 12, 254) 100%);
+    color: white;
+    text-align: left;
+    font-style:Verdana;
+    font-weight: 600;
+    padding: 1em 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}  
+  .navbar{
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-content: first baseline;
+    text-align: right;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+footer {
+    background: linear-gradient(135deg, rgb(40, 4, 245) 10%, rgb(13, 255, 255) 100%);
+    color: white;
+    text-align: center;
+    font-style:Verdana;
+    font-weight: 600;
+    padding: 1em 0;
+}
